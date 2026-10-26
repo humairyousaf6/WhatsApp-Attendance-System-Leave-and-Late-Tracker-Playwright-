@@ -1,0 +1,18 @@
+{
+  "dailyCatchUpAndHrEmail": {
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "times": ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"],
+    "purpose": "Verify closed attendance days, update the ledger, generate PDF/XLSX, and email one catch-up report to HR."
+  },
+  "monthlyHrReport": {
+    "days": ["Daily when a completed cycle is due"],
+    "times": ["11:30", "13:30", "15:30"],
+    "cycle": "Previous month day 21 through current month day 20",
+    "purpose": "Generate and email a complete verified monthly report from the local ledger."
+  },
+  "ledgerRetention": {
+    "days": ["First day of each month after the initial retention year"],
+    "times": ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"],
+    "purpose": "Remove complete ledger months older than the rolling one-year retention window."
+  }
+}

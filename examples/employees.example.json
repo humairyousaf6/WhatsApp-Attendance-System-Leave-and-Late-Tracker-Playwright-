@@ -1,0 +1,17 @@
+{
+  "timezone": "Asia/Karachi",
+  "holidays": [],
+  "employees": [
+    {
+      "id": "employee-001",
+      "displayName": "Example Employee",
+      "aliases": ["Example"],
+      "senderNames": ["Example Employee"],
+      "shift": "day",
+      "scheduledWeekdays": [1, 2, 3, 4, 5],
+      "activeFrom": "2026-01-01",
+      "activeTo": null,
+      "dateOverrides": {}
+    }
+  ]
+}

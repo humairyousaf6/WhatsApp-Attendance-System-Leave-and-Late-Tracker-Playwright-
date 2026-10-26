@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Attendance System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div class="mark" aria-hidden="true">WA</div>
+        <div>
+          <p class="eyebrow">Windows desktop automation</p>
+          <h1>WhatsApp Attendance System</h1>
+          <p>Leave, late arrival, shift, and attendance reporting with verified local records.</p>
+        </div>
+        <span class="exe-pill">Windows .exe</span>
+      </header>
+
+      <section class="setup card">
+        <div>
+          <p class="eyebrow">First-run connections</p>
+          <h2>Ready for HR reporting</h2>
+          <p>Connect WhatsApp once by QR and authorize Gmail once. Credentials stay local.</p>
+        </div>
+        <div class="setup-actions">
+          <button type="button">Login WhatsApp (QR)</button>
+          <button type="button">Connect Gmail</button>
+          <button class="secondary" type="button">Continue</button>
+        </div>
+      </section>
+
+      <nav class="tabs" aria-label="Application sections">
+        <button class="active" type="button">Home</button>
+        <button type="button">Ledger</button>
+        <button type="button">Settings</button>
+      </nav>
+
+      <div class="workspace">
+        <section class="reports">
+          <article class="card report-card">
+            <div class="section-heading">
+              <div><p class="eyebrow">On demand</p><h2>Daily report</h2></div>
+              <span>PDF + Excel</span>
+            </div>
+            <label for="dailyDate">Closed attendance date</label>
+            <input id="dailyDate" type="date" value="2026-10-25" />
+            <button class="wide" type="button">Run daily report</button>
+          </article>
+
+          <article class="card report-card">
+            <div class="section-heading">
+              <div><p class="eyebrow">Flexible period</p><h2>Range report</h2></div>
+              <span>Verified ledger</span>
+            </div>
+            <div class="date-grid">
+              <label>Start<input type="date" value="2026-10-01" /></label>
+              <label>End<input type="date" value="2026-10-25" /></label>
+            </div>
+            <button class="wide" type="button">Run range report</button>
+          </article>
+        </section>
+
+        <aside class="side-stack">
+          <section class="card health">
+            <p class="eyebrow">Connection health</p>
+            <div class="health-row"><span>WhatsApp session</span><strong>Connected</strong><i></i></div>
+            <div class="health-row"><span>Gmail delivery</span><strong>Authorized</strong><i></i></div>
+            <div class="health-row"><span>Optional API key</span><strong>Configured</strong><i></i></div>
+          </section>
+
+          <section class="card ledger">
+            <p class="eyebrow">Local attendance ledger</p>
+            <h2>Verified through 25 Oct 2026</h2>
+            <div class="metric-grid">
+              <div><strong>24</strong><span>employees</span></div>
+              <div><strong>12</strong><span>months retained</span></div>
+              <div><strong>0</strong><span>unverified days</span></div>
+            </div>
+            <p class="ledger-note">Atomic local storage · catch-up pointer · recognizer version stamps · duplicate-safe jobs</p>
+          </section>
+        </aside>
+      </div>
+
+      <section class="automation card">
+        <div><p class="eyebrow">Windows Task Scheduler</p><h2>Automatic triggers</h2></div>
+        <div class="trigger-grid">
+          <article><strong>Daily catch-up</strong><span>Mon–Fri · hourly 12:00–17:00</span><p>Sync verified days and email PDF/XLSX to HR.</p></article>
+          <article><strong>Monthly report</strong><span>11:30 · 13:30 · 15:30</span><p>Email the completed 21→20 ledger cycle.</p></article>
+          <article><strong>Ledger retention</strong><span>Monthly · rolling one year</span><p>Purge only complete expired months.</p></article>
+        </div>
+      </section>
+
+      <p id="demoStatus" class="status">Sanitized public UI preview — fictional data only.</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

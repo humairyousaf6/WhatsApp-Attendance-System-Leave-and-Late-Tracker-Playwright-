@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+release/
+*.log
+*.pid
+.whatsapp-profile/
+data/
+reports/
+config/employees.json
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
